@@ -310,7 +310,7 @@ Let's look at the following query operators:
 | `#>>` | follow path, return string |
 | `@>` | return json object if left value contains right value |
 | `?` | return json object if left value contains the right value as a key |
-| `?|` | return json object if left value contains any of the right-hand values as keys |
+| `?\|` | return json object if left value contains any of the right-hand values as keys |
 | `?&` | return json object if left value contains all of the right hand values as keys |
 
 You can read more about [JSON operators
