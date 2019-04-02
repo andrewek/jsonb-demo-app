@@ -340,7 +340,7 @@ indifferent access by default:
 ```ruby
 class JsonbSerializer
   def self.dump(hsh)
-    hsh.to_json
+    hsh
   end
 
   def self.load(hsh)
@@ -348,6 +348,10 @@ class JsonbSerializer
   end
 end
 ```
+
+A serializer must respond to both `.dump` and `.load` - ActiveRecord already
+serializes incoming JSON correctly. We just need it to handle the JSON coming
+out.
 
 Then we'll just need to update our model appropriately:
 
