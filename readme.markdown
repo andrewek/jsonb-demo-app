@@ -303,7 +303,7 @@ Workout.where("(exercises -> 'squat' ->> 'reps_per_set')::int >= :reps", reps: 3
 Let's look at the following query operators:
 
 | operator | description |
-------------------------------------
+|----------|------------------------|
 | `->` | Get next JSON object by key |
 | `->>` | Get next JSON object as string (can cast) |
 | `#>` | follow path, return JSON object |
