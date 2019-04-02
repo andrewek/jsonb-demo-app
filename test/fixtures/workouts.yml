@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: workouts
+#
+#  id         :bigint(8)        not null, primary key
+#  date       :datetime
+#  exercises  :jsonb
+#  uuid       :uuid
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uuid: 
+  date: 2019-04-02 10:46:43
+  exercises: 
+
+two:
+  uuid: 
+  date: 2019-04-02 10:46:43
+  exercises: 
